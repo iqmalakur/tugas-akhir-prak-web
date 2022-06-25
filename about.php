@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -18,6 +19,7 @@
     <!-- Favicon -->
     <link rel="icon" href="img/logo/cropped-cropped-LOGO-FSI-180x180.png" sizes="180x180" />
 </head>
+
 <body>
     <nav class="navbar navbar-expand-md navbar-dark position-absolute">
         <div class="container-md">
@@ -52,7 +54,7 @@
                 <h2 class="fs-1 text-light">Tentang Kami</h2>
                 <h2 class="fs-4 text-light">Fakultas Sains dan Informatika</h2>
                 <div class="d-flex justify-content-center mb-5 mt-4">
-                    <div class="bg-warning line"></div>
+                    <div class="bg-info line"></div>
                 </div>
             </div>
         </div>
@@ -93,7 +95,7 @@
                 </article>
             </div>
         </section>
-        
+
         <section id="visi-misi" class="py-5">
             <div class="container">
                 <h2 class="text-center judul mb-5">Visi & Misi</h2>
@@ -148,7 +150,7 @@
         </section>
     </main>
 
-    <div class="scroll-top fs-1 position-fixed btn btn-success d-flex justify-content-center align-items-center d-none"><i class="bi bi-arrow-up-short"></i></div>
+    <div class="scroll-top fs-1 position-fixed btn btn-primary d-flex justify-content-center align-items-center d-none"><i class="bi bi-arrow-up-short"></i></div>
 
     <footer class="text-light py-4">
         <div class="container">
@@ -160,7 +162,7 @@
                             <a href="https://goo.gl/maps/1eS22yMB4VTPATCm7" class="text-decoration-none text-light" target="_blank">
                                 <i class="bi bi-house-door"></i> Jl. Terusan Jend. Sudirman, Cibeber
                             </a>
-                            </span>
+                        </span>
                         <span><i class="bi bi-telephone"></i> (022) 6650646</span>
                         <span>
                             <a href="https://wa.me/6281818900600" class="text-light text-decoration-none" target="_blank">
@@ -207,4 +209,5 @@
     <!-- FSI JS -->
     <script src="js/main.js"></script>
 </body>
+
 </html>

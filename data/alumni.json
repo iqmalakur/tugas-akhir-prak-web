@@ -1,8 +1,1 @@
-[
-    {
-        "nama": "Udin",
-        "gambar": "male.png",
-        "pekerjaan": "Ngoding",
-        "pesan": "lorem ipsum dolor sit amet."
-    }
-]
+[{"nama":"Udin","gender":"male","pekerjaan":"Back-end Developer","pesan":"Lorem ipsum dolor sit amet"},{"nama":"Lestari","gender":"female","pekerjaan":"UI\/UX Designer","pesan":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, pariatur."},{"nama":"Ucup","gender":"male","pekerjaan":"Software Engineer","pesan":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias excepturi, saepe neque sit perspiciatis sequi."},{"nama":"Asep","gender":"male","pekerjaan":"Quality Assurance","pesan":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae id nobis esse dolorem"},{"nama":"Sinta","gender":"female","pekerjaan":"Teknisi Labolatorium Klinis","pesan":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus earum sint incidunt maiores numquam, quam eveniet similique, qui, magni a doloribus laudantium autem. Facere, enim necessitatibus Delectus facere aperiam et."}]

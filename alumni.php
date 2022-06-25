@@ -58,42 +58,98 @@ $alumnies = json_decode(file_get_contents("data/alumni.json"));
                 <h2 class="fs-1 text-light">Alumni</h2>
                 <h2 class="fs-4 text-light">Fakultas Sains dan Informatika</h2>
                 <div class="d-flex justify-content-center mb-5 mt-4">
-                    <div class="bg-warning line"></div>
+                    <div class="bg-info line"></div>
                 </div>
             </div>
         </div>
     </header>
 
     <main>
+        <?php if (isset($_SESSION["success"])) : ?>
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                <i class="bi bi-check-circle-fill"></i> Pesan berhasil terkirim!
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        <?php
+            $_SESSION["success"] = null;
+            unset($_SESSION["success"]);
+        endif;
+        ?>
+
         <section id="alumni" class="py-5">
             <div class="container">
                 <h2 class="text-center judul mb-5">Testimoni Lulusan</h2>
-                <div class="row justify-content-center my-4">
+                <div class="row justify-content-center mt-4">
                     <?php foreach ($alumnies as $alumni) : ?>
-                        <div class="col-md-4 d-flex justify-content-end mx-1 mb-2 position-relative">
-                            <div class="position-absolute alumni-img">
-                                <img src="img/alumni/<?= $alumni->gambar; ?>" alt="<?= $alumni->nama; ?>" class="img-fluid rounded-circle" width="75">
-                            </div>
-                            <div class="card alumni-card">
-                                <div class="card-body">
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                                <div class="d-flex justify-content-center mt-3 mb-1">
+                                    <img src="img/alumni/<?= $alumni->gender; ?>.png" width="100" alt="<?= $alumni->nami; ?>">
+                                </div>
+                                <div class="card-body text-center">
                                     <h5 class="card-title"><?= $alumni->nama; ?></h5>
                                     <h6 class="card-subtitle mb-2 text-muted"><?= $alumni->pekerjaan; ?></h6>
-                                    <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" class="card-link">Card link</a>
-                                    <a href="#" class="card-link">Another link</a> -->
-                                    <blockquote class="blockquote">
-                                        <p><?= $alumni->pesan; ?></p>
-                                    </blockquote>
+                                    <p class="card-text alumni-pesan px-3"><?= $alumni->pesan; ?></p>
                                 </div>
                             </div>
                         </div>
                     <?php endforeach ?>
                 </div>
+
+                <div class="text-center">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#formTestimoni">
+                        Beri Testimoni
+                    </button>
+                </div>
             </div>
         </section>
     </main>
 
-    <div class="scroll-top fs-1 position-fixed btn btn-success d-flex justify-content-center align-items-center d-none"><i class="bi bi-arrow-up-short"></i></div>
+    <!-- Modal -->
+    <div class="modal fade" id="formTestimoni" tabindex="-1" aria-labelledby="formTestimoniLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="formTestimoniLabel">Beri Testimoni</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form action="testimoni.php" method="POST" enctype="multipart/form-data">
+                    <div class="modal-body">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="nama" name="nama" placeholder="Nama" required />
+                            <label for="nama">Nama</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="pekerjaan" name="pekerjaan" placeholder="Pekerjaan" required />
+                            <label for="pekerjaan">Pekerjaan</label>
+                        </div>
+                        <div class="mb-3 ps-1">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="gender" id="male" value="male" required>
+                                <label class="form-check-label" for="male">Laki-laki</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="gender" id="female" value="female" required>
+                                <label class="form-check-label" for="female">Perempuan</label>
+                            </div>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" id="pesan" name="pesan" placeholder="Pesan" required></textarea>
+                            <label for="pesan">Pesan</label>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="text-end">
+                            <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="scroll-top fs-1 position-fixed btn btn-primary d-flex justify-content-center align-items-center d-none"><i class="bi bi-arrow-up-short"></i></div>
 
     <footer class="text-light py-4">
         <div class="container">

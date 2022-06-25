@@ -60,11 +60,11 @@ $galleries = json_decode(file_get_contents("data/gallery.json"));
                         <div class="header-text text-center p-4">
                             <h2 class="fs-1 text-light">Fakultas Sains dan Informatika</h2>
                             <h2 class="fs-2 text-light">Universitas Jenderal Achmad Yani</h2>
-                            <h3 class="fs-5 text-warning">Smart Military University</h3>
+                            <h3 class="fs-5 text-info">Smart Military University</h3>
                             <div class="d-flex justify-content-center mb-5 mt-4">
-                                <div class="bg-warning line"></div>
+                                <div class="bg-info line"></div>
                             </div>
-                            <a href="#" class="btn btn-outline-warning text-light fs-5 px-4">Daftar Sekarang!</a>
+                            <a href="https://www.pmb.unjani.ac.id/" target="_blank" class="btn btn-outline-info text-light fs-5 px-4">Daftar Sekarang!</a>
                         </div>
                     </div>
                 </div>
@@ -73,11 +73,11 @@ $galleries = json_decode(file_get_contents("data/gallery.json"));
                         <div class="header-text text-center p-4">
                             <h2 class="fs-1 text-light">Informatika</h2>
                             <h2 class="fs-2 text-light">Universitas Jenderal Achmad Yani</h2>
-                            <h3 class="fs-5 text-warning">Smart Military University</h3>
+                            <h3 class="fs-5 text-info">Smart Military University</h3>
                             <div class="d-flex justify-content-center mb-5 mt-4">
-                                <div class="bg-warning line"></div>
+                                <div class="bg-info line"></div>
                             </div>
-                            <a href="http://if.unjani.ac.id/" target="_blank" class="btn btn-outline-warning text-light fs-5 px-4">Lihat Selengkapnya</a>
+                            <a href="http://if.unjani.ac.id/" target="_blank" class="btn btn-outline-info text-light fs-5 px-4">Lihat Selengkapnya</a>
                         </div>
                     </div>
                 </div>
@@ -86,11 +86,11 @@ $galleries = json_decode(file_get_contents("data/gallery.json"));
                         <div class="header-text text-center p-4">
                             <h2 class="fs-1 text-light">Kimia</h2>
                             <h2 class="fs-2 text-light">Universitas Jenderal Achmad Yani</h2>
-                            <h3 class="fs-5 text-warning">Smart Military University</h3>
+                            <h3 class="fs-5 text-info">Smart Military University</h3>
                             <div class="d-flex justify-content-center mb-5 mt-4">
-                                <div class="bg-warning line"></div>
+                                <div class="bg-info line"></div>
                             </div>
-                            <a href="http://kimia.unjani.ac.id/" target="_blank" class="btn btn-outline-warning text-light fs-5 px-4">Lihat Selengkapnya</a>
+                            <a href="http://kimia.unjani.ac.id/" target="_blank" class="btn btn-outline-info text-light fs-5 px-4">Lihat Selengkapnya</a>
                         </div>
                     </div>
                 </div>
@@ -99,11 +99,11 @@ $galleries = json_decode(file_get_contents("data/gallery.json"));
                         <div class="header-text text-center p-4">
                             <h2 class="fs-1 text-light">Sistem Informasi</h2>
                             <h2 class="fs-2 text-light">Universitas Jenderal Achmad Yani</h2>
-                            <h3 class="fs-5 text-warning">Smart Military University</h3>
+                            <h3 class="fs-5 text-info">Smart Military University</h3>
                             <div class="d-flex justify-content-center mb-5 mt-4">
-                                <div class="bg-warning line"></div>
+                                <div class="bg-info line"></div>
                             </div>
-                            <a href="http://si.unjani.ac.id/" target="_blank" class="btn btn-outline-warning text-light fs-5 px-4">Lihat Selengkapnya</a>
+                            <a href="http://si.unjani.ac.id/" target="_blank" class="btn btn-outline-info text-light fs-5 px-4">Lihat Selengkapnya</a>
                         </div>
                     </div>
                 </div>
@@ -127,7 +127,7 @@ $galleries = json_decode(file_get_contents("data/gallery.json"));
                     <div class="col-md-10">
                         <p>Fakultas Sains dan Informatika (FSI) merupakan salah satu Fakultas tertua di Unjani yang mempunyai 4 Program Studi yaitu Program Studi Kimia memiliki Akreditasi B, Program Studi Informatika memiliki Akreditasi B, serta Program Studi baru yaitu Program Studi Sistem Informasi dan Program Studi Magister Kimia. Saat ini FSI memiliki 38 Staf akademik tetap yang terdiri dari Guru Besar (5 %), Doktor (24 %), dan Magister (71 %). Visi FSI tentunya menyesuaikan dengan Visi Unjani yaitu Menjadi universitas unggul, berjiwa kebangsaan dan berwawasan lingkungan.</p>
                         <div class="text-end mt-4">
-                            <a href="about.html" class="btn btn-outline-primary">Baca Selengkapnya...</a>
+                            <a href="about.php" class="btn btn-outline-primary">Baca Selengkapnya...</a>
                         </div>
                     </div>
                 </div>
@@ -137,8 +137,8 @@ $galleries = json_decode(file_get_contents("data/gallery.json"));
         <section id="jurusan" class="py-5">
             <div class="container">
                 <h2 class="text-center judul mb-5">Jurusan</h2>
-                <div class="row justify-content-center my-4">
-                    <div class="col-md-4">
+                <div class="row justify-content-center mt-4">
+                    <div class="col-md-4 mb-4">
                         <div class="card">
                             <img src="img/logo/fsi-if.png" class="card-img-top my-3 mx-auto" alt="informatika">
                             <div class="card-body">
@@ -150,7 +150,7 @@ $galleries = json_decode(file_get_contents("data/gallery.json"));
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 mb-4">
                         <div class="card">
                             <img src="img/logo/cropped-cropped-LOGO-FSI-180x180.png" class="card-img-top my-3 mx-auto" alt="kimia">
                             <div class="card-body">
@@ -162,7 +162,7 @@ $galleries = json_decode(file_get_contents("data/gallery.json"));
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 mb-4">
                         <div class="card">
                             <img src="img/logo/fsi-si.jpg" class="card-img-top my-3 mx-auto" alt="sistem informasi">
                             <div class="card-body">
@@ -181,8 +181,8 @@ $galleries = json_decode(file_get_contents("data/gallery.json"));
         <section id="service" class="bg-light py-5">
             <div class="container">
                 <h2 class="text-center judul mb-5">Layanan</h2>
-                <div class="row justify-content-center my-4">
-                    <div class="col-md-5">
+                <div class="row justify-content-center mt-4">
+                    <div class="col-md-4 mb-4">
                         <div class="card">
                             <div class="card-body service-card position-relative">
                                 <div class="rounded-circle position-absolute bg-light service-circle"></div>
@@ -193,12 +193,28 @@ $galleries = json_decode(file_get_contents("data/gallery.json"));
 
                                 <p class="card-text mt-1">Admin Kami siap melayani pertanyaan Anda terkait FSI via WhatsApp</p>
                                 <div class="text-end">
-                                    <a href="https://wa.me/6281818900600" target="_blank" class="btn btn-outline-success">Hubungi</a>
+                                    <a href="https://wa.me/6281818900600" target="_blank" class="btn btn-outline-primary">Hubungi</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-5">
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <div class="card-body service-card position-relative">
+                                <div class="rounded-circle position-absolute bg-light service-circle"></div>
+                                <span class="position-relative fs-1 logo"><i class="bi bi-gear"></i></span>
+
+                                <h5 class="card-title mt-2">Informasi Jurusan</h5>
+                                <div class="bg-light rounded-pill service-line"></div>
+
+                                <p class="card-text mt-1">Informasi mengenai jurusan apa saja yang ada di Fakultas Sains dan Informatika</p>
+                                <div class="text-end">
+                                    <a href="#jurusan" class="btn btn-outline-primary">Lihat selengkapnya</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
                         <div class="card">
                             <div class="card-body service-card position-relative">
                                 <div class="rounded-circle position-absolute bg-light service-circle"></div>
@@ -209,7 +225,7 @@ $galleries = json_decode(file_get_contents("data/gallery.json"));
 
                                 <p class="card-text mt-1">Lihat apa yang dikatakan para Lulusan Fakultas Sains dan Informatika</p>
                                 <div class="text-end">
-                                    <a href="alumni.php" class="btn btn-outline-success">Lihat Selengkapnya</a>
+                                    <a href="alumni.php" class="btn btn-outline-primary">Lihat Selengkapnya</a>
                                 </div>
                             </div>
                         </div>
@@ -226,8 +242,8 @@ $galleries = json_decode(file_get_contents("data/gallery.json"));
                         <div class="col-md-3 mx-1 mb-2 gallery-item position-relative overflow-hidden shadow p-0">
                             <img src="img/gallery/<?= $gallery->url; ?>" class="img-fluid" alt="<?= $gallery->title; ?>">
                             <div class="gallery-info text-light position-absolute p-3 d-flex flex-column justify-content-between">
-                                <h4 class="fw-normal"><span class="bg-warning py-1 px-2"><?= $gallery->title; ?></span></h4>
-                                <a href="<?= $gallery->url; ?>" class="align-self-center fs-2 text-light lightbox-trigger"><i class="bi bi-zoom-in"></i></a>
+                                <h4 class="fw-normal"><span class="bg-info py-1 px-2"><?= $gallery->title; ?></span></h4>
+                                <a href="img/gallery/<?= $gallery->url; ?>" class="align-self-center fs-2 text-light lightbox-trigger"><i class="bi bi-zoom-in"></i></a>
                                 <p class="text-center fw-bold"><?= $gallery->desc; ?></p>
                             </div>
                         </div>
@@ -241,7 +257,7 @@ $galleries = json_decode(file_get_contents("data/gallery.json"));
         <img src="" alt="">
     </div>
 
-    <div class="scroll-top fs-1 position-fixed btn btn-success d-flex justify-content-center align-items-center d-none"><i class="bi bi-arrow-up-short"></i></div>
+    <div class="scroll-top fs-1 position-fixed btn btn-primary d-flex justify-content-center align-items-center d-none"><i class="bi bi-arrow-up-short"></i></div>
 
     <footer class="text-light py-4">
         <div class="container">

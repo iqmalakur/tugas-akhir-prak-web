@@ -55,7 +55,7 @@ header::after {
 
 .header-text h2,
 .header-text a{
-    text-shadow: 2px 2px rgba(255, 0, 0, .7);
+    text-shadow: 0 0 5px rgb(255, 193, 7, .7);
 }
 
 .carousel-item.active .header-text .line,
@@ -72,7 +72,7 @@ header::after {
 .judul::after{
     content: "";
     display: block;
-    border-bottom: 3px solid #ffc107;
+    border-bottom: 3px solid #0dcaf0;
     margin: auto;
     width: 100px;
     padding-bottom: 5px;
@@ -125,15 +125,20 @@ footer::after {
 
 /* Medium Device Layout */
 @media (min-width: 768px) {
-    .nav-link.active::after,
-    .nav-link:hover::after {
+    .nav-link::after {
         content: "";
         display: block;
-        border-bottom: 3px solid #ffc107;
+        border-bottom: 3px solid #0dcaf0;
         margin: auto;
         padding-bottom: 5px;
         margin-bottom: -8px;
-        animation: nav 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+        transition: .2s;
+        width: 0%;
+    }
+    
+    .nav-link.active::after,
+    .nav-link:hover::after {
+        width: 100%;
     }
 }
 

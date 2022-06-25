@@ -4,17 +4,17 @@ $(".service-card")
         const line = $($(this).children()[3])
 
         circle.removeClass("bg-light")
-        circle.addClass("bg-warning")
+        circle.addClass("bg-info")
         line.removeClass("bg-light")
-        line.addClass("bg-warning")
+        line.addClass("bg-info")
     })
     .mouseleave(function() {
         const circle = $($(this).children()[0])
         const line = $($(this).children()[3])
 
-        circle.removeClass("bg-warning")
+        circle.removeClass("bg-info")
         circle.addClass("bg-light")
-        line.removeClass("bg-warning")
+        line.removeClass("bg-info")
         line.addClass("bg-light")
     })
 

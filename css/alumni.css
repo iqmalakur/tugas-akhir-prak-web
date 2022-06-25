@@ -1,11 +1,13 @@
 @import "main.css";
 
-.alumni-img{
-    left: 0;
-    top: 13px;
-    z-index: 999;
+.alumni-pesan::before,
+.alumni-pesan::after{
+    content: "  \"  ";
+    color: #0dcaf0;
+    font-weight: bold;
+    font-size: 18px;
 }
 
-.alumni-card{
-    width: 90%;
+form textarea#pesan{
+    height: 150px;
 }
