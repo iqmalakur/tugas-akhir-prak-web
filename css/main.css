@@ -1,0 +1,157 @@
+/* Body */
+body{
+    background-image: url(../img/bg/triangle-mosaic.png);
+}
+
+/* Navbar */
+nav.navbar {
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.navbar-brand img {
+    max-width: 250px;
+}
+
+/* Hero Section */
+header.hero-img,
+header .carousel-item {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header.hero-img{
+    height: 50vh;
+    background-image: url(../img/bg/unjani-2.jpg);
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.header-text{
+    z-index: -1;
+}
+
+.header-text .line{
+    height: 3px;
+    border-radius: 1px;
+}
+
+.header-text a.btn{
+    border-radius: 20px;
+}
+
+.header-text h2,
+.header-text a{
+    text-shadow: 2px 2px rgba(255, 0, 0, .7);
+}
+
+.carousel-item.active .header-text .line,
+.hero-img .header-text .line{
+    animation: line .7s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+}
+
+.carousel-item.active .header-text,
+.hero-img .header-text{
+    z-index: 1;
+}
+
+/* Main Content */
+.judul::after{
+    content: "";
+    display: block;
+    border-bottom: 3px solid #ffc107;
+    margin: auto;
+    width: 100px;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+}
+
+/* Footer */
+footer {
+    background-image: url(../img/bg/fsi.png);
+    background-attachment: fixed;
+    background-position: 50% 0;
+    position: relative;
+    z-index: 2;
+}
+
+footer .container {
+    position: relative;
+    z-index: 4;
+}
+
+footer::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.footer-links {
+    margin: 0;
+    padding: 0;
+    text-indent: 0;
+    list-style-type: none;
+}
+
+/* Scroll top button */
+.scroll-top {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    z-index: 999;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    transition: all 0.4s;
+}
+
+/* Medium Device Layout */
+@media (min-width: 768px) {
+    .nav-link.active::after,
+    .nav-link:hover::after {
+        content: "";
+        display: block;
+        border-bottom: 3px solid #ffc107;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+        animation: nav 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+    }
+}
+
+/* Keyframe */
+@keyframes nav {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes line {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 200px;
+    }
+}

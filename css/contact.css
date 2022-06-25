@@ -1,0 +1,9 @@
+@import "main.css";
+
+.contact-card {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+form textarea#pesan{
+    height: 150px;
+}

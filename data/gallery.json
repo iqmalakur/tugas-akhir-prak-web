@@ -1,0 +1,47 @@
+[
+    {
+        "title": "Staff",
+        "url": "staff.jpeg",
+        "desc": "Dosen dan Staff FSI"
+    },
+    {
+        "title": "Lab Pemrograman",
+        "url": "lab-pemrograman-1.jpg",
+        "desc": "Labolatorium Pemrograman FSI"
+    },
+    {
+        "title": "Lab Pemrograman",
+        "url": "lab-pemrograman-2.jpg",
+        "desc": "Labolatorium Pemrograman FSI"
+    },
+    {
+        "title": "Lab Jaringan & Hardware",
+        "url": "lab-jaringan&hardware-1.jpg",
+        "desc": "Labolatorium Jaringan dan Hardware FSI"
+    },
+    {
+        "title": "Lab Jaringan & Hardware",
+        "url": "lab-jaringan&hardware-2.jpg",
+        "desc": "Labolatorium Jaringan dan Hardware FSI"
+    },
+    {
+        "title": "Lab Multimedia",
+        "url": "lab-multimedia-1.jpg",
+        "desc": "Labolatorium Multimedia FSI"
+    },
+    {
+        "title": "Lab Multimedia",
+        "url": "lab-multimedia-2.jpg",
+        "desc": "Labolatorium Multimedia FSI"
+    },
+    {
+        "title": "Lab Informatika",
+        "url": "lab-informatika.jpg",
+        "desc": "Labolatorium Infomatika FSI"
+    },
+    {
+        "title": "Lab Sistem Informasi",
+        "url": "lab-sistem-informasi.jpg",
+        "desc": "Labolatorium Sistem Informasi FSI"
+    }
+]
