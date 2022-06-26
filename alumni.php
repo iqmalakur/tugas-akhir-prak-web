@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 $alumnies = json_decode(file_get_contents("data/alumni.json"));
 ?>
 
